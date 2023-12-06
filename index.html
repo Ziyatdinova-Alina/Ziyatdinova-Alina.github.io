@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <title>mimimimimimi</title>
+</head>
+<body>
+  <div class="header" id="header">
+    <div class="blurred">
+      <img src="img/bg.png">
+    </div>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="fs-1">StandUp-Club</h1>
+      </div>
+    </nav>
+    <div class="poster">
+      <img src="img\cover-mobile.png">
+    </div>
+  </div>
+  <div class="main">
+    
+    <div class="s1">
+      <div class="container">
+        <h2 class="fs-1">Саша Долгополов в Москве</h2>
+      </div>
+      <div class="container">
+        <div class="row g-2">
+          <div class="col-1">
+            <img src="img\icon-time.png" class="icon">
+          </div>
+          <div class="align-self-end col-11">
+            <h3 class="align-self-end fs-6 coord1">Суббота 10 июня, 20:00 - 22:00</h3>
+          </div>
+        </div>
+        <div class="row g-2">
+          <div class="col-1">
+            <img src="img\icon-location.png" class="icon">
+          </div>
+          <div class="align-self-end col-11 coord2">
+            <h3 class="align-self-end fs-6">ул. Покровка, 16, Москва, 10100</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="s2">
+      <div class="buy-form">
+        <div class="container">
+          <div id="buy-ticket-btn" class="buy-ticket">
+            <a href="#show-description-section">
+              <button class="buy-ticket__btn-header" id="howToBuy">
+                Купить билет
+              </button>
+            </a>
+          <div class="description">
+            <h3 id="text-1" class="fs-6">Александр Долгополов не боится шутить о политике, известных личностях и даже религии.</h3>
+            <h3 class="fs-6">Его сольный концерт обязательно будет смелым, провокационным и непременно смешным.</h3>      
+          </div>
+          </div>
+        </div>  
+        <div class="container" id="show-description-btn">
+          <div class="show-description-btn">
+            <button class="description__btn-header">
+              Показать описание
+            </button>
+          </div>
+        </div>
+        <div class="description__content" id="show-description-section">
+          <div class="description__content__ticket" id="description__content__ticket">
+            <div class="description__section-header" id="tickets-no-collapsed-header">
+              <div class="container">
+                Билеты
+              </div>
+            </div>
+            <div class="description__section-header tickets-collapsed" id="tickets-collapsed">
+              <div class="container tickets-collapsed__content">
+                <div class="tickets-collapsed__colvo" id="tickets-collapsed-colvo">
+                  Билеты
+                </div>
+                <a href="#tickets-no-collapsed-header" class="tickets-collapsed__edit" role="button" data-bs-toggle="collapse" aria-controls="btn-next" aria-expanded="false" data-bs-target="#ticket" aria-controls="ticket" id="tickets-collapsed-edit">
+                  изменить
+                </a>
+              </div>
+            </div>
+            <div class="description__content__ticket__content container collapse show multi-collapse" id="ticket">
+              <div class="card" id="tickets-no-collapsed-card">
+                <div class="card__body">
+                <h4 class="card__title">Билет на шоу(обычный)</h4>
+                <h4 class="card__text">1750 ₽</h4>
+                <div class="card__input mb-3">
+                  <button class="card__no-minus" type="button" id="minus-btn">-</button>
+                  <input type="text" class="form-control card__no-number" value="" id="quantity-input">
+                  <button class="card__plus-minus" type="button" id="plus-btn">+</button>
+                </div>
+                </div>
+              </div>
+              <div class="tickets" id="tickets-no-collapsed-container1"> 
+                <div class="discount" id="discount">
+                  <div class="discount__text" type="button" id="discount-text">У вас есть код скидки?</div>    
+                  <input class="discount__input" type="input" id="discount-input">
+                  <div class="discount__check" type="button" id="discount-check">Введите код</div>
+                  <div class="discount__yes" type="text" id="discount__yes">Скидка будет применена после перехода к оплате</div>
+                  <div class="discount__no" type="text" id="discount__no">Код скидки не найден</div>
+                </div>
+                <div class="sum" id="tickets-no-collapsed-sum">
+                  <div class="sum__all" id="sum__all">Сумма 0.00 ₽</div>
+                  <div class="sum__nso" id="sum__nso">Включает НСО 0.00 ₽</div>
+                </div>
+                <a href="#show-description-btn"><button class="btn-primary description__no-next" type="text" id="btn-next" data-bs-toggle="collapse" aria-controls="btn-next" aria-expanded="true" data-bs-target=".multi-collapse" aria-controls="contact ticket">Продолжить</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="description__content__contact" id="description__content__contact">
+            <div class="description__section-header" id="contact-no-collapsed-header">
+              <div class="container description__content__contact__header" id="contact-no-collapsed-header-color">
+                Контакты
+              </div>
+            </div>
+            <div class="description__section-header contact-collapsed" id="contact-collapsed"><div class="container description__content__contact__header">
+              <div class="contact-collapsed__email" id="contact-collapsed-email">
+                Email
+              </div>
+              <a href="#contact-no-collapsed-header" class="contact-collapsed__edit" role="button" data-bs-toggle="collapse" aria-controls="btn-next2" aria-expanded="false" data-bs-target="#contact" aria-controls="contact" id="contact-collapsed-edit">
+                изменить
+              </a>
+            </div></div>
+  
+            <div class="description__content__contact__content container collapse multi-collapse multi-collapse2" id="contact" aria-expanded="true">
+              <div class="description__content__contact__content__email">
+                <div class="description__content__contact__content__email__header">
+                  <h3>Адрес электронной почты*</h3>
+                </div>
+                <div class="description__content__contact__content__email__input">
+                  <input type="email" id="email" placeholder="example@email.com" required>
+                </div>
+                <div class="description__content__contact__content__email__info">
+                  Пожалуйста, проверьте, правильно ли вы ввели адрес электронной почты.
+                </div>
+              </div>
+              <div class="description__content__contact__content__phone">
+                <div class="description__content__contact__content__phone__header">
+                  <h3>Номер телефона</h3>
+                </div>
+                <div class="description__content__contact__content__phone__input">
+                  <input type="tel" id="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+                <div class="description__content__contact__content__phone__info">
+                  Чтобы мы могли связаться с Вами по поводу покупки в случае необходимости.
+                </div>
+              </div>
+              <a href="#contact-collapsed"><button class="btn-primary description__no-next" type="text" id="btn-next2" data-bs-toggle="collapse" data-bs-target=".multi-collapse2">Продолжить</button></a>
+            </div>
+          </div>
+          <div class="description__content__payment">
+            <div class="description__section-header" id="payment-no-collapsed-header">
+              <div class="container description__content__payment__header" id="payment-no-collapsed-header-color">
+                Способ Оплаты
+              </div>
+            </div>
+          <div class="description__content__payment__content container collapse multi-collapse2" id="payment">
+            <div class="description__content__payment__content__check">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <div class="form-check__union-pay">
+                    <div class="form-check__union-pay__img"><img src="img/american-express.png"></div>
+                  </div>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  <div class="form-check__union-pay">
+                    <div class="form-check__union-pay__img"><img src="img/union-pay.png"></div>
+                  </div>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  <div class="form-check__visa">
+                    <div class="form-check__visa__img"><img src="img/Rectangle 20.png"></div>
+                    <div class="form-check__visa__img"><img src="img/Rectangle 21.png"></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="description__content__payment__content__agreement">
+              <div class="form-check" type="button">
+                <input class="form-check-input" type="checkbox" value="" id="agreementCheck">
+                <label class="form-check-label description__content__payment__content__agreement" for="agreementCheck">
+                  <div class="description__content__payment__content__agreement__text">
+                    Я прочитал и согласен с 
+                  </div>                  
+                  <button type="button" class="btn btn-primary description__content__payment__content__agreement__link" data-bs-toggle="modal" data-bs-target="#exampleModal" id="terms">
+                    условиями продажи.*
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title fs-5" id="exampleModalLabel">Пользовательское соглашение</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Добро пожаловать на наш сайт и на шоу Stand-up Club!<br> Мы стремимся обеспечить бесперебойную и приятную работу для всех наших посетителей. Посещая наш сайт и приобретая билеты, вы соглашаетесь со следующими условиями и положениями:<br>
+  
+                            Билеты: Вы несете ответственность за приобретение правильного количества билетов на шоу. Цена билета зависит от количества приобретенных билетов и времени представления.<br>
+                            
+                            Оплата: Вы должны будете оплатить билеты, используя действительный способ оплаты. С вас может быть взыскана небольшая комиссия за транзакцию.<br>
+                            
+                            Аннулирование: Вы имеете право отказаться от билетов в любое время во время представления. Если вы отмените билеты, вам не будет возвращена часть стоимости билета.<br>
+                            
+                            Ответственность: Мы не гарантируем точность и полноту информации на нашем сайте. Мы не гарантируем, что шоу будет соответствовать рекламе.<br>
+                            
+                            Конфиденциальность: Мы серьезно относимся к вашей конфиденциальности. Мы не собираем и не передаем никакой личной информации о наших посетителях.<br>
+                            
+                            Авторское право: Содержание нашего сайта защищено законом об авторском праве. Вы не имеете права воспроизводить, распространять или демонстрировать содержание без нашего разрешения.<br>
+                            
+                            Отказ от ответственности: Мы не гарантируем, что шоу будет соответствовать рекламе. Мы не гарантируем, что шоу не будет содержать технических проблем или технических трудностей.<br>
+                            
+                            Ограничение ответственности: Мы не несем ответственности за любой ущерб или потери, которые могут произойти во время шоу.<br>
+                            
+                            Регулирующее законодательство: Настоящие положения и условия регулируются и толкуются в соответствии с законодательством думали тут будет прикол а приколов нет.<br>
+  
+                            Благодарим вас за посещение нашего сайта и покупку билетов на шоу. Мы надеемся увидеть вас на шоу!                          
+  
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="agreement">Принять соглашение</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <a href="https://www.figma.com/file/QqQXFkm0c6L5tlkC9iJkAa/%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0?type=design&node-id=0%3A1&mode=dev" target="_blank"><button class="btn-primary description__no-next" type="text" id="btn-pay">Произвести оплату</button></a>
+          </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <!-- <div class="separator"></div> -->
+    <div class="s3">
+      <div class="container">
+        <div class="direction">
+          <div class="direction__text">
+            <h3 class="fs-6">ул. Покровка, 16, Москва, 10100</h3>
+            <a href="https://yandex.ru/maps/-/CDq4fCL~" target="_blank"><button id="btn-directions" class="btn btn-primary fs-6 direction__text__button">Направления движения</button></a>
+          </div>
+          <div class="map">
+            <img src="img\map.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="separator"></div> -->
+    <div class="s4">
+      <div class="container">
+            <h2 class="fs-2">StandUp Show</h2>
+            <a href="https://userinyerface.com/" target="_blank"><h3 class="fs-6">info@standup-club.com</h3></a>
+      </div>
+    </div> 
+  </div>
+  <footer class="footer mt-6 mb-6">
+    <div class="footer-first">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-xl-3">
+            <a href="#header"><p class="mb-1"><h1 class="fs-6">Stand-up Club</h1></p></a>
+            <a href="https://snob.ru/indoc/attachments/snob2/45/9e/459e0a253006fd0fcbe784aac75eb95630f9ee2d8a42eddcfed5f28297eac578.jpg" target="_blank"><p class="mb-1"><h3 class="fs-6">Moscow, Russia</h3></p></a>
+          </div>
+          <div class="col-md-4 col-xl-3 mt-3 mt-md-0">
+            <p class="mb-1">
+              <a href="#howToBuy"><h3 class="fs-6">How to buy</h3></a>
+            </p>
+            <p class="mb-1">
+              <a href="https://a-z-animals.com/blog/how-long-do-cicadas-live/" target="_blank"><h3 class="fs-6">Frequently asked questions</h3></a>
+            </p>
+          </div>
+          <div class="col-md-4 col-xl-3 mt-3 mt-md-0">
+            <p class="mb-1">
+              <a href="#terms"><h3 class="fs-6">Terms of use</h3></a>
+            </p>
+            <p class="mb-1">
+              <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary">
+                  <h3 class="fs-6">Slideshow</h3>
+                </button>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img\Rectangle 20.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img\american-express.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img\Rectangle 21.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </ul>
+              </div>
+              <!-- <a href="/privacy"><h3 class="fs-6">Privacy policy, Cookies</h3></a> -->
+            </p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
