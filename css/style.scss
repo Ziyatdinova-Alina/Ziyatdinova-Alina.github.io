@@ -593,6 +593,9 @@ input[type="tel"]:not(:placeholder-shown):not(:focus):invalid {
         color:#2B2B2B;
     }
 }
+.was-validated{
+    
+}
 
 @media (min-width: 567px) {
     .description{
@@ -804,14 +807,23 @@ input[type="tel"]:not(:placeholder-shown):not(:focus):invalid {
     .poster{
         display:flex;
         justify-content: center;
+        &__slider{
+            width:90%;
+            border-radius: 5px 5px 0 0;
+            position:relative;
+            z-index: 100;
+            margin-top: 0.5%;
+            box-shadow: 0px -4px 10px 0px hsla(0, 0%, 75.18%, 0.1);    
+        }
     }
-    .poster img{
-        width:90%;
-        border-radius: 5px 5px 0 0;
-        position:relative;
-        z-index: 100;
-        margin-top: 0.5%;
-        box-shadow: 0px -4px 10px 0px hsla(0, 0%, 75.18%, 0.1);    }
+    // .poster img{
+    //     width:90%;
+    //     border-radius: 5px 5px 0 0;
+    //     position:relative;
+    //     z-index: 100;
+    //     margin-top: 0.5%;
+    //     box-shadow: 0px -4px 10px 0px hsla(0, 0%, 75.18%, 0.1);    
+    // }
     .navbar{
         margin: 0.5% 0 5% 5%;
         .container{
@@ -1296,7 +1308,7 @@ input[type="tel"]:not(:placeholder-shown):not(:focus):invalid {
 
     }
     .header{
-        width:80%;
+        // width:80%;
         margin: 2% 10% 0 10%;
     }
     .blurred img{

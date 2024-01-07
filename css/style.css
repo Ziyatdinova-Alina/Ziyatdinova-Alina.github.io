@@ -779,7 +779,7 @@ input[type=tel]:not(:placeholder-shown):not(:focus):invalid {
     display: flex;
     justify-content: center;
   }
-  .poster img {
+  .poster__slider {
     width: 90%;
     border-radius: 5px 5px 0 0;
     position: relative;
@@ -1221,7 +1221,6 @@ input[type=tel]:not(:placeholder-shown):not(:focus):invalid {
     margin: 0% 10% 0 10%;
   }
   .header {
-    width: 80%;
     margin: 2% 10% 0 10%;
   }
   .blurred img {
